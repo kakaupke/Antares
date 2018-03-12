@@ -1,0 +1,15 @@
+{
+  "name": "AstronomyTweets",
+  "version": "1.0.0",
+  "description": "Display a list of the top 100 tweets for #Astronomy",
+  "main": "index.js",
+  "scripts": {
+  	"start": "node AstronomyTweets.js",
+    "test": "\"echo \"Error: no test specified\" && exit 1\""
+  },
+  "author": "Katie Kaupke",
+  "license": "ISC"
+  "dependencies": {
+  	"twitter": "^1.7.1"
+  }
+}
