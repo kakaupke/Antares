@@ -3,16 +3,15 @@ Written by: Katie Kaupke
 Date: 2018-03-11
 
 Description: 
-1. Select a list of the top 100 tweets with a hashtag of your choice (Node.js)
-2. Output results to the console or use a GET rest endpoint (express.js + Node.js)
-
+	1. Select a list of the top 100 tweets with a hashtag of your choice (Node.js) - #Astronomy
+	
 Node.js Version: v8.10.0
 npm Version: v5.6.0
 
 Requires npm install Twitter
 */
 
-
+//let the user know it's starting
 console.log("This is Major Tom to Ground Control: ");
 //required 
 var rocket = require('Twitter'); //Twitter library used
