@@ -15,7 +15,7 @@ Requires npm install Twitter
 
 console.log("This is Major Tom to Ground Control: ");
 //required 
-var rocket = require('Twitter'); //Twitter
+var rocket = require('Twitter'); //Twitter library used
 var crew = require('./config'); //Config file
 
 //The Twitter object
@@ -39,14 +39,14 @@ function blastOff(error, tweets, response) {
 	for (i = 0; i < 100; i++) {
 		
 		try{
-			itinerary = '\ntweet #' + (i + 1) + ', From: @' + tweets.statuses[i]["user"]["screen_name"] 
-							+ '\n' + tweets.statuses[i]["text"] + '\n' ;
+			itinerary = '\ntweet #' + (i + 1) + ', From: @' + tweets.statuses[i]['user']['screen_name'] 
+							+ '\n' + tweets.statuses[i]['text'] + '\n' ;
 
 		console.log(itinerary); //print out results 
 
 		}catch(e){ //basic error handling
 
-			console.log("This is Ground Control to Major Tom: Result " + i + 'is not a valid tweet');
+			console.log('This is Ground Control to Major Tom: Result ' + i + 'is not a valid tweet because of \n' + e);
 		}
 
 	}
